@@ -6,7 +6,8 @@ module.exports = cds.service.impl(async function () {
 
   // connect to remote service
   const BPSrv = await cds.connect.to("API_BUSINESS_PARTNER");
-
+  //jay
+  
   // set criticality after READ operation
   this.after("READ", Risks, (data) => {
     const risks = Array.isArray(data) ? data : [data];
