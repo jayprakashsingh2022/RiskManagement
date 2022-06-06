@@ -66,6 +66,7 @@ modules:
                 artifacts:
                   - ./*
                 target-path: resources
+      - name: risk-management-db
 
   # -------------------------UI--------------------
   - name: risk-management
@@ -97,6 +98,7 @@ resources:
             description: View Risks
             role-template-references:
               - $XSAPPNAME.RiskViewer
+        tenant-mode: dedicated
   # ------------------------------------------------------------
   - name: risk-management-db
     # ------------------------------------------------------------
